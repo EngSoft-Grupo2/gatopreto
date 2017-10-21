@@ -8,6 +8,7 @@ namespace ProjetoGatoPreto
 	public class CardDecision {
 
 		[Tooltip("Text shown when the card is slid.")]
+        [TextArea]
 		public string decisionDescription = "";
 
 		[Tooltip("Card effects.")]

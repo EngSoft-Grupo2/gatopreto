@@ -24,6 +24,7 @@ namespace ProjetoGatoPreto
         public Sprite cardTexture;
 
         [Tooltip("Card description shown in the in-game interface.")]
+        [TextArea]
         public string cardDescription = "";
 
         [Tooltip("[<] decision.")]
@@ -33,9 +34,11 @@ namespace ProjetoGatoPreto
         public CardDecision rightDecision;
 
         [Tooltip("Help text.")]
+        [TextArea]
         public string helpText;
 
         [Tooltip("Bibliography/sources.")]
+        [TextArea]
         public string bibliography;
     }
 }
