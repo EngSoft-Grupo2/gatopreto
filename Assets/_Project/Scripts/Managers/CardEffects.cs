@@ -7,12 +7,12 @@ namespace ProjetoGatoPreto
 {
 	public class CardEffects : MonoBehaviour
 	{
-		public Effect[] RightEffects;
-		public Effect[] LeftEffects;
+		public CardEffect[] RightEffects;
+		public CardEffect[] LeftEffects;
 
 		private void OnSwipeRight()
 		{
-			foreach (Effect effect in RightEffects)
+			foreach (CardEffect effect in RightEffects)
 			{
 				GameManager.instance.player.ApplyEffect(effect);
 			}
@@ -20,7 +20,7 @@ namespace ProjetoGatoPreto
 
 		private void OnSwipeLeft()
 		{
-			foreach (Effect effect in LeftEffects)
+			foreach (CardEffect effect in LeftEffects)
 			{
 				GameManager.instance.player.ApplyEffect(effect);
 			}

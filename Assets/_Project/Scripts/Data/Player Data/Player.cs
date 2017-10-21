@@ -5,8 +5,11 @@ using UnityEngine;
 
 namespace ProjetoGatoPreto
 {
-	public class Effect : MonoBehaviour
+	public class Player
 	{
-		
+		public void ApplyEffect(CardEffect effect)
+		{
+
+		}
 	}
 }
