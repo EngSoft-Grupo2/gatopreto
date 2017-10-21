@@ -31,5 +31,11 @@ namespace ProjetoGatoPreto
 
         [Tooltip("[>] decision.")]
         public CardDecision rightDecision;
+
+        [Tooltip("Help text.")]
+        public string helpText;
+
+        [Tooltip("Bibliography/sources.")]
+        public string bibliography;
     }
 }
