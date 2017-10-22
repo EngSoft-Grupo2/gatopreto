@@ -225,7 +225,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0.0038540573, b: 0.5588235, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -317,7 +317,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0.0038540573, b: 0.5588235, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -1864,7 +1864,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Fazer decis\xE3o Y"
+  m_Text: "N\xE3o"
 --- !u!222 &1534831572
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1920,7 +1920,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
@@ -2065,6 +2065,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16e8e7f9bfff6dc48bbddda00025e684, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  decisionDisplay: {fileID: 86880948}
+  fadeTime: 0.25
 --- !u!61 &1652471252
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2261,6 +2263,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16e8e7f9bfff6dc48bbddda00025e684, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  decisionDisplay: {fileID: 91241835}
+  fadeTime: 0.25
 --- !u!61 &1823723787
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2612,7 +2616,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Fazer decis\xE3o X"
+  m_Text: Sim
 --- !u!222 &2139629255
 CanvasRenderer:
   m_ObjectHideFlags: 0
