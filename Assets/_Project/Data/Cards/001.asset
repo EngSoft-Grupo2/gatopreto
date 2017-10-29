@@ -9,7 +9,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b227798de7dbc994bbc305ac5668eee3, type: 3}
-  m_Name: CardData
+  m_Name: Exemplo
   m_EditorClassIdentifier: 
   cardName: 
   cardCategory: 0
@@ -21,3 +21,5 @@ MonoBehaviour:
   rightDecision:
     decisionDescription: 
     decisionEffects: []
+  helpText: 
+  bibliography: 
