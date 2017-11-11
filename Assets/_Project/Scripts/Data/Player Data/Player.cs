@@ -5,7 +5,7 @@ using UnityEngine;
 
 namespace ProjetoGatoPreto
 {
-    public class Player
+    public class Player : MonoBehaviour
     {
         public int[] attributeValues = new int[Enum.GetValues(typeof(PlayerAttribute)).Length - 1];
 
