@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.Events;
 using UnityEngine;
 
 namespace ProjetoGatoPreto
@@ -16,7 +17,7 @@ namespace ProjetoGatoPreto
         [Tooltip("Value to apply. You can use negative values to subtract if this is an ADD effect.")]
         public double value = 0.0;
 
-        [Tooltip("Special event triggered upon using this effect. Not implemented properly yet, can be ignored, for now.")]
-        public bool callEvent;
+        [Tooltip("Event triggered when the effect is applied.")]
+        public UnityEvent callEvent;
     }
 }
