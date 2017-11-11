@@ -1,5 +1,4 @@
 ﻿// [Implements: https://github.com/EngSoft-Grupo2/gatopreto/issues/22]
-
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -8,11 +7,11 @@ namespace ProjetoGatoPreto
 {
 #if UNITY_EDITOR
     using UnityEditor;
-    [CreateAssetMenu (fileName = "CardData", menuName = "Card")]
+    [CreateAssetMenu(fileName = "CardData", menuName = "Card")]
 #endif 
     public class CardData : ScriptableObject
     {
-        [Header ("Card Data")]
+        [Header("Card Data")]
 
         [Tooltip("Card identifier. If empty, the file name will be used.")]
         public string cardName = "";

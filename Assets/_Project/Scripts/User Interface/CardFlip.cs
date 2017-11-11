@@ -78,7 +78,7 @@ namespace ProjetoGatoPreto
             float startTime = Time.time;
             Quaternion startRotation = Quaternion.Euler(0.0f, 0.0f, 0.0f);
             Quaternion endRotation = Quaternion.Euler(0.0f, flipAngle, 0.0f);
-            overTime = overTime/2;
+            overTime = overTime / 2;
             while (Time.time < startTime + overTime)
             {
                 transform.rotation = Quaternion.Slerp(startRotation, endRotation, (Time.time - startTime) / overTime);

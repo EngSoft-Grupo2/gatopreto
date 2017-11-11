@@ -7,10 +7,10 @@ namespace ProjetoGatoPreto
     public enum PlayerAttribute
     {
         NONE, // DO NOT REMOVE THIS
-        
+
         [Description("Dinheiro")]
         MONEY,
-        
+
         [Description("Pessoal")]
         STAFF,
 

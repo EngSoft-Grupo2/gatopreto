@@ -10,8 +10,9 @@ namespace ProjetoGatoPreto
         private static GameManager _instance;
         public static GameManager instance
         {
-            get { 
-                if(_instance == null)
+            get
+            {
+                if (_instance == null)
                 {
                     var obj = new GameObject("Game Manager");
                     _instance = obj.AddComponent<GameManager>();

@@ -10,7 +10,7 @@ public static class EnumExtensions
         Type type = enumerationValue.GetType();
         if (!type.IsEnum)
         {
-        throw new ArgumentException("EnumerationValue must be of Enum type", "enumerationValue");
+            throw new ArgumentException("EnumerationValue must be of Enum type", "enumerationValue");
         }
 
         //Tries to find a DescriptionAttribute for a potential friendly name
@@ -22,8 +22,8 @@ public static class EnumExtensions
 
             if (attrs != null && attrs.Length > 0)
             {
-            //Pull out the description value
-            return ((DescriptionAttribute) attrs[0]).Description;
+                //Pull out the description value
+                return ((DescriptionAttribute) attrs[0]).Description;
             }
         }
         //If we have no description attribute, just return the ToString of the enum

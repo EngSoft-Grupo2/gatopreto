@@ -2,7 +2,7 @@
 {
     public enum CardFace
     {
-		FRONT,
-		BACK
+        FRONT,
+        BACK
     }
 }

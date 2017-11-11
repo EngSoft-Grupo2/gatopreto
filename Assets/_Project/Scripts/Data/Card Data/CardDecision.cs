@@ -4,14 +4,15 @@ using UnityEngine;
 
 namespace ProjetoGatoPreto
 {
-	[System.Serializable]
-	public class CardDecision {
+    [System.Serializable]
+    public class CardDecision
+    {
 
-		[Tooltip("Text shown when the card is slid.")]
+        [Tooltip("Text shown when the card is slid.")]
         [TextArea]
-		public string decisionDescription = "";
+        public string decisionDescription = "";
 
-		[Tooltip("Card effects.")]
-		public CardEffect[] decisionEffects;
-	}
+        [Tooltip("Card effects.")]
+        public CardEffect[] decisionEffects;
+    }
 }

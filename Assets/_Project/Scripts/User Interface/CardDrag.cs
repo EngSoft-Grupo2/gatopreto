@@ -7,8 +7,10 @@ namespace ProjetoGatoPreto
 {
     public class CardDrag : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler
     {
-        public bool canChange { 
-            get {
+        public bool canChange
+        {
+            get
+            {
                 return (!dragged && !tween.IsObjectOpened());
             }
         }
