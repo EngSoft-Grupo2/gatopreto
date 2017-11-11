@@ -11,7 +11,8 @@ namespace ProjetoGatoPreto
 
         void OnTriggerEnter2D(Collider2D other)
         {
-            Handheld.Vibrate();
+            if (GameManager.instance.settings.vibration)
+                Handheld.Vibrate();
             StartCoroutine(this.AnimateCanvasGroupAlpha(decisionDisplay, 0.0f, 1.0f, fadeTime));
         }
 
