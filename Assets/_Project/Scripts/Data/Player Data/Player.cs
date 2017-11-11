@@ -11,7 +11,7 @@ namespace ProjetoGatoPreto
 
         public void ApplyEffect(CardEffect effect)
         {
-            switch(effect.operation)
+            switch (effect.operation)
             {
                 case EffectOperation.ADD:
                     attributeValues[(int) effect.attribute] += effect.value;
