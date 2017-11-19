@@ -6,8 +6,16 @@ namespace ProjetoGatoPreto
 {
     public class DropZone : MonoBehaviour
     {
-        public CanvasGroup decisionDisplay;
         public float fadeTime = 0.25f;
+        private CanvasGroup decisionDisplay;
+
+        /// <summary>
+        /// Awake is called when the script instance is being loaded.
+        /// </summary>
+        void Awake()
+        {
+            decisionDisplay = transform.Find("Decision").GetComponent<CanvasGroup>();
+        }
 
         void OnTriggerEnter2D(Collider2D other)
         {

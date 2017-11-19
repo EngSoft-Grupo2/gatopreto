@@ -21,7 +21,7 @@ public class Attribute : MonoBehaviour
     private bool animating, showingImpact;
 
     //Class public variables - to be set outside the code
-    public string name;
+    public string attributeName;
     public Sprite normal, negative, positive;
 
     //When the attribute is created in the scene...

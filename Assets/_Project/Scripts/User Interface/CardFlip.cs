@@ -8,7 +8,6 @@ namespace ProjetoGatoPreto
     public class CardFlip : MonoBehaviour
     {
         public float flipTime;
-        public CanvasGroup descPanelCanvasGroup;
         public CardFace face
         {
             set
@@ -43,6 +42,7 @@ namespace ProjetoGatoPreto
         private Image image;
         private Transform cardFront;
         private Transform cardBack;
+        private CanvasGroup descPanelCanvasGroup;
 
         void Awake()
         {
@@ -50,6 +50,7 @@ namespace ProjetoGatoPreto
             cardDrag = GetComponent<CardDrag>();
             cardFront = transform.Find("Card Front");
             cardBack = transform.Find("Card Back");
+            descPanelCanvasGroup = ReferencesManager.instance.cardDescription.GetComponent<CanvasGroup>();
             _face = CardFace.FRONT;
         }
         public void Flip()
