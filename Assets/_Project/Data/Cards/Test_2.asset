@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b227798de7dbc994bbc305ac5668eee3, type: 3}
+  m_Name: Test_2
+  m_EditorClassIdentifier: 
+  cardName: 
+  cardCategory: 1
+  cardTexture: {fileID: 21300000, guid: 021fb7e7f9c964b8aa93d45a52dbbeb2, type: 3}
+  cardDescription: "Preciso de uma nova funcionalidade no software e ela precisa ser
+    feita com urg\xEAncia.\r"
+  leftDecision:
+    decisionDescription: Implementa a funcionalidade diretamente.
+    decisionEffects:
+    - attribute: 4
+      operation: 2
+      value: 20
+      callEvent:
+        m_PersistentCalls:
+          m_Calls: []
+        m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
+          PublicKeyToken=null
+    - attribute: 3
+      operation: 2
+      value: -20
+      callEvent:
+        m_PersistentCalls:
+          m_Calls: []
+        m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
+          PublicKeyToken=null
+  rightDecision:
+    decisionDescription: Cria os testes antes de implementar a funcionalidade.
+    decisionEffects:
+    - attribute: 3
+      operation: 2
+      value: 20
+      callEvent:
+        m_PersistentCalls:
+          m_Calls: []
+        m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
+          PublicKeyToken=null
+    - attribute: 4
+      operation: 2
+      value: -20
+      callEvent:
+        m_PersistentCalls:
+          m_Calls: []
+        m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
+          PublicKeyToken=null
+  helpText: "<b>Desenvolvimento Guiado por Testes </b> consiste numa t\xE9cnica de
+    desenvolvimento de software onde primeiro s\xE3o criados os testes abrangendo
+    a melhoria desejada e/ou novas funcionalidades e somente depois \xE9 implementado
+    o c\xF3digo necess\xE1rio para passar por eles."
+  bibliography: 

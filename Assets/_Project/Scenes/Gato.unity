@@ -513,12 +513,15 @@ MonoBehaviour:
   rightDropZone: {fileID: 1823723782}
   rightDecisionText: {fileID: 1534831568}
   cardHolder: {fileID: 1158636373}
+  dummyCard: {fileID: 812102313}
+  dummyCardFront: {fileID: 1150937060}
   card: {fileID: 846581379}
   cardFront: {fileID: 418470056}
   cardBack: {fileID: 1549053863}
   helpText: {fileID: 1383657400}
   cardDescription: {fileID: 885385861}
   cardDescriptionText: {fileID: 482544168}
+  deck: {fileID: 1864239882}
 --- !u!4 &383788021
 Transform:
   m_ObjectHideFlags: 0
@@ -1112,7 +1115,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.39705884, g: 0.39705884, b: 0.39705884, a: 1}
+  m_Color: {r: 0.39705884, g: 0.39705884, b: 0.39705884, a: 0.78431374}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -1217,7 +1220,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.39705884, g: 0.39705884, b: 0.39705884, a: 1}
+  m_Color: {r: 0.39705884, g: 0.39705884, b: 0.39705884, a: 0.78431374}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -1943,14 +1946,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 04992b482c4d166479c28b31c5fd98d6, type: 3}
+  m_Sprite: {fileID: 0}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3357,6 +3360,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cards:
   - {fileID: 11400000, guid: b75ad3f8acf66124fbd7722945fdd2e0, type: 2}
+  - {fileID: 11400000, guid: f3e4145a440a48d4d979a087c32d8369, type: 2}
 --- !u!1 &2026608831
 GameObject:
   m_ObjectHideFlags: 0

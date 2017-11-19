@@ -20,13 +20,15 @@ namespace ProjetoGatoPreto
         public GameObject rightDropZone;
         public GameObject rightDecisionText;
         public GameObject cardHolder;
+        public GameObject dummyCard;
+        public GameObject dummyCardFront;
         public GameObject card;
         public GameObject cardFront;
         public GameObject cardBack;
         public GameObject helpText;
         public GameObject cardDescription;
         public GameObject cardDescriptionText;
-
+        public Deck deck;
 
         private void Awake()
         {

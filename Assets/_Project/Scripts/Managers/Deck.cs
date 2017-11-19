@@ -22,6 +22,7 @@ namespace ProjetoGatoPreto
 		}
 		private CardData topCardData;
 		private Card topCard;
+		private Image bottomCardFrontImage;
 
 		/// <summary>
 		/// Awake is called when the script instance is being loaded.
@@ -29,6 +30,7 @@ namespace ProjetoGatoPreto
 		void Awake()
 		{
 			topCard = ReferencesManager.instance.card.GetComponent<Card>();
+			bottomCardFrontImage = ReferencesManager.instance.dummyCardFront.GetComponent<Image>();
 		}
 
 		/// <summary>
@@ -61,6 +63,16 @@ namespace ProjetoGatoPreto
 			else
 			{
 				TopCardData = cards[0];
+				if (cards.Count >= 2)
+				{
+					bottomCardFrontImage.sprite = cards[1].cardTexture;
+					bottomCardFrontImage.color = new Color(0.5f, 0.5f, 0.5f, 1f);
+				}
+				else
+				{
+					bottomCardFrontImage.sprite = null;
+					bottomCardFrontImage.color = new Color(1f, 1f, 1f, 0f);
+				}
 				return cards[0];
 			}
 		}
