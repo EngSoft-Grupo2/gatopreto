@@ -9,6 +9,7 @@ namespace ProjetoGatoPreto
 	public class Card : MonoBehaviour
 	{
 		public CardData defaultCard;
+		public bool isDummy = false;
 		public CardData Data
 		{
 			get
@@ -34,6 +35,8 @@ namespace ProjetoGatoPreto
 		/// </summary>
 		void Awake()
 		{
+			if (isDummy)
+				return;
 			cardTexture = ReferencesManager.instance.cardFront.GetComponent<Image>();
 			cardDescriptionText = ReferencesManager.instance
 				.cardDescriptionText
@@ -51,6 +54,8 @@ namespace ProjetoGatoPreto
 
 		void UpdateCard()
 		{
+			if (isDummy)
+				return;
 			cardTexture.sprite = Data.cardTexture;
 			cardDescriptionText.text = Data.cardDescription;
 			leftDecisionText.text = Data.leftDecision.decisionDescription;

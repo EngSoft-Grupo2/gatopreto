@@ -54,8 +54,8 @@ MonoBehaviour:
           m_Calls: []
         m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
           PublicKeyToken=null
-  helpText: "O <b>teste do software</b> \xE9 a investiga\xE7\xE3o do software a fim
-    de fornecer informa\xE7\xF5es sobre sua qualidade em rela\xE7\xE3o ao contexto
-    em que ele deve operar. Isso inclui o processo de utilizar o produto para encontrar
-    seus defeitos.\r"
+  helpText: "<b>Desenvolvimento Guiado por Testes </b> consiste numa t\xE9cnica de
+    desenvolvimento de software onde primeiro s\xE3o criados os testes abrangendo
+    a melhoria desejada e/ou novas funcionalidades e somente depois \xE9 implementado
+    o c\xF3digo necess\xE1rio para passar por eles."
   bibliography: 
