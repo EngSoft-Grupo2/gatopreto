@@ -31,6 +31,16 @@ namespace ProjetoGatoPreto
 			topCard = ReferencesManager.instance.card.GetComponent<Card>();
 		}
 
+		/// <summary>
+		/// Start is called on the frame when a script is enabled just before
+		/// any of the Update methods is called the first time.
+		/// </summary>
+		void Start()
+		{
+			Shuffle();
+			Draw();
+		}
+
 		void SetOpenCard(CardData cardData)
 		{
 			topCard.Data = cardData;
@@ -50,6 +60,7 @@ namespace ProjetoGatoPreto
 			}
 			else
 			{
+				TopCardData = cards[0];
 				return cards[0];
 			}
 		}
