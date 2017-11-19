@@ -9,7 +9,7 @@ namespace ProjetoGatoPreto
 	public class Deck : MonoBehaviour
 	{
 		public List<CardData> cards;
-		public CardData OpenCard
+		public CardData TopCardData
 		{
 			set
 			{
@@ -17,27 +17,24 @@ namespace ProjetoGatoPreto
 			}
 			get
 			{
-				return _openCard;
+				return topCardData;
 			}
 		}
-		private CardData _openCard;
-		private GameObject openCard;
-		private Text openCardDescriptionText;
+		private CardData topCardData;
+		private Card topCard;
 
 		/// <summary>
 		/// Awake is called when the script instance is being loaded.
 		/// </summary>
 		void Awake()
 		{
-			openCard = transform.Find("Card Holder/Card").gameObject;
-			openCardDescriptionText = transform.Find("Card Description Panel/Text").GetComponent<Text>();
+			topCard = ReferencesManager.instance.card.GetComponent<Card>();
 		}
 
 		void SetOpenCard(CardData cardData)
 		{
-			
-			_openCard = cardData;
-
+			topCard.Data = cardData;
+			topCardData = cardData;
 		}
 
 		public void Shuffle()
@@ -59,7 +56,7 @@ namespace ProjetoGatoPreto
 
 		public void Discard()
 		{
-			OpenCard = null;
+			TopCardData = null;
 			if (cards.Count <= 0)
 			{
 				cards.RemoveAt(0);
