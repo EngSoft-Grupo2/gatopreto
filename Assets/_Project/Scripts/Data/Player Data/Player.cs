@@ -7,7 +7,15 @@ namespace ProjetoGatoPreto
 {
     public class Player : MonoBehaviour
     {
-        public double[] attributeValues = new double[Enum.GetValues(typeof(PlayerAttribute)).Length - 1];
+        public double[] attributeValues = new double[Enum.GetValues(typeof(PlayerAttribute)).Length];
+
+        public void ApplyDecisionEffects(CardDecision decision)
+        {
+            foreach (CardEffect effect in decision.decisionEffects)
+            {
+                ApplyEffect(effect);
+            }
+        }
 
         public void ApplyEffect(CardEffect effect)
         {

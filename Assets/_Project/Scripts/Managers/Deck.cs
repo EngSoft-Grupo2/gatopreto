@@ -71,7 +71,7 @@ namespace ProjetoGatoPreto
 				else
 				{
 					bottomCardFrontImage.sprite = null;
-					bottomCardFrontImage.color = new Color(1f, 1f, 1f, 0f);
+					bottomCardFrontImage.color = new Color(0f, 0f, 0f, 0f);
 				}
 				return cards[0];
 			}
@@ -80,10 +80,16 @@ namespace ProjetoGatoPreto
 		public void Discard()
 		{
 			TopCardData = null;
-			if (cards.Count <= 0)
+			if (cards.Count >= 0)
 			{
 				cards.RemoveAt(0);
 			}
+		}
+
+		public void DrawNext()
+		{
+			Discard();
+			Draw();
 		}
 	}
 }

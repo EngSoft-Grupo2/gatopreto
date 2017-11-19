@@ -18,16 +18,15 @@ namespace ProjetoGatoPreto
 			}
 			set
 			{
-				data = value;
+				data = value ? value : defaultCard;
 				UpdateCard();
 			}
 		}
 		private CardData data;
-
 		private Image cardTexture;
 		private Text cardDescriptionText;
-		private Text leftDecisionText;
-		private Text rightDecisionText;
+		private DropZone leftDecisionDropZone;
+		private DropZone rightDecisionDropZone;
 		private Text helpText;
 
 		/// <summary>
@@ -41,12 +40,12 @@ namespace ProjetoGatoPreto
 			cardDescriptionText = ReferencesManager.instance
 				.cardDescriptionText
 				.GetComponent<Text>();
-			leftDecisionText = ReferencesManager.instance
-				.leftDecisionText
-				.GetComponent<Text>();
-			rightDecisionText = ReferencesManager.instance
-				.rightDecisionText
-				.GetComponent<Text>();
+			leftDecisionDropZone = ReferencesManager.instance
+				.leftDropZone
+				.GetComponent<DropZone>();
+			rightDecisionDropZone = ReferencesManager.instance
+				.rightDropZone
+				.GetComponent<DropZone>();
 			helpText = ReferencesManager.instance
 				.helpText
 				.GetComponent<Text>();
@@ -58,8 +57,8 @@ namespace ProjetoGatoPreto
 				return;
 			cardTexture.sprite = Data.cardTexture;
 			cardDescriptionText.text = Data.cardDescription;
-			leftDecisionText.text = Data.leftDecision.decisionDescription;
-			rightDecisionText.text = Data.rightDecision.decisionDescription;
+			leftDecisionDropZone.Decision = Data.leftDecision;
+			rightDecisionDropZone.Decision = Data.rightDecision;
 			helpText.text = Data.helpText;
 		}
 
