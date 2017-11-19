@@ -509,12 +509,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   leftDropZone: {fileID: 1652471247}
+  leftDecisionText: {fileID: 2139629251}
   rightDropZone: {fileID: 1823723782}
+  rightDecisionText: {fileID: 1534831568}
   cardHolder: {fileID: 1158636373}
   card: {fileID: 846581379}
   cardFront: {fileID: 418470056}
   cardBack: {fileID: 1549053863}
+  helpText: {fileID: 1383657400}
   cardDescription: {fileID: 885385861}
+  cardDescriptionText: {fileID: 482544168}
 --- !u!4 &383788021
 Transform:
   m_ObjectHideFlags: 0
@@ -584,7 +588,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 9d3e8989de857488a9f6a1abbfcaffba, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 04992b482c4d166479c28b31c5fd98d6, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -733,8 +737,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Ap\xF3s a defini\xE7\xE3o dos cen\xE1rios de teste, o que voc\xEA vai fazer
-    com as hist\xF3rias de usu\xE1rio?"
+  m_Text: 
 --- !u!222 &482544172
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1262,7 +1265,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   flipTime: 0.25
-  descPanelCanvasGroup: {fileID: 885385865}
 --- !u!82 &846581391
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1354,6 +1356,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bdd7fabab4043474a9905dd3eb67ab74, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  defaultCard: {fileID: 0}
 --- !u!1 &885385861
 GameObject:
   m_ObjectHideFlags: 0
@@ -1979,12 +1982,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-    nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-    fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-    culpa qui officia deserunt mollit anim id est laborum.\r\n"
+  m_Text: 
 --- !u!222 &1383657403
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2168,7 +2166,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "N\xE3o"
+  m_Text: 
 --- !u!222 &1534831572
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2573,7 +2571,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16e8e7f9bfff6dc48bbddda00025e684, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  decisionDisplay: {fileID: 86880948}
   fadeTime: 0.25
 --- !u!61 &1652471252
 BoxCollider2D:
@@ -2771,7 +2768,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16e8e7f9bfff6dc48bbddda00025e684, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  decisionDisplay: {fileID: 91241835}
   fadeTime: 0.25
 --- !u!61 &1823723787
 BoxCollider2D:
@@ -3137,7 +3133,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Sim
+  m_Text: 
 --- !u!222 &2139629255
 CanvasRenderer:
   m_ObjectHideFlags: 0
