@@ -20,7 +20,7 @@ namespace ProjetoGatoPreto
         private Vector3 dragPosition;
         private EasyTween tween;
         private bool dragged = false;
-        private bool scaling = false;
+        public bool canDrag = false;
 
         /// <summary>
         /// Awake is called when the script instance is being loaded.
@@ -39,10 +39,14 @@ namespace ProjetoGatoPreto
         }
         public void OnBeginDrag(PointerEventData eventData)
         {
+            if (!canDrag)
+                return;
             dragPosition = transform.position - (Vector3) eventData.position;
         }
         public void OnDrag(PointerEventData eventData)
         {
+            if (!canDrag)
+                return;
             dragged = false;
             if (!tween.IsObjectOpened())
             {
@@ -52,8 +56,7 @@ namespace ProjetoGatoPreto
         }
         public void OnEndDrag(PointerEventData eventData)
         {
-            Debug.Log("End Drag");
-            if (!dragged || scaling)
+            if (!dragged || !canDrag)
                 return;
             if (!tween.IsObjectOpened())
             {
@@ -65,14 +68,6 @@ namespace ProjetoGatoPreto
             }
             dragged = false;
             tween.OpenCloseObjectAnimation();
-        }
-
-        public void PlayDecisionAnimation()
-        {
-            scaling = true;
-            tween.SetAnimationScale(Vector3.one, Vector3.zero, AnimationCurve.Linear(0,0,1,1), AnimationCurve.Linear(0,0,1,1));
-            tween.OpenCloseObjectAnimation();
-            ReferencesManager.instance.deck.DrawNext();
         }
     }
 }

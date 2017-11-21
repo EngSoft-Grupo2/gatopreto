@@ -37,6 +37,7 @@ namespace ProjetoGatoPreto
         }
         private CardFace _face = CardFace.FRONT;
         private bool isFlipping = false;
+        public bool canFlip = false;
         private float waitTime;
         private CardDrag cardDrag;
         private Image image;
@@ -53,14 +54,17 @@ namespace ProjetoGatoPreto
             descPanelCanvasGroup = ReferencesManager.instance.cardDescription.GetComponent<CanvasGroup>();
             _face = CardFace.FRONT;
         }
-        public void Flip()
+        public void Flip(bool fadeDecision = true)
         {
-            if (isFlipping || !cardDrag.canChange)
+            if (isFlipping || !cardDrag.canChange || !canFlip)
                 return;
-            if (face == CardFace.FRONT)
-                StartCoroutine(AnimateDescriptionFade(descPanelCanvasGroup, 1.0f, 0.0f, flipTime));
-            else
-                StartCoroutine(AnimateDescriptionFade(descPanelCanvasGroup, 0.0f, 1.0f, flipTime));
+            if (fadeDecision)
+            {
+                if (face == CardFace.FRONT)
+                    StartCoroutine(AnimateDescriptionFade(descPanelCanvasGroup, 1.0f, 0.0f, flipTime));
+                else
+                    StartCoroutine(AnimateDescriptionFade(descPanelCanvasGroup, 0.0f, 1.0f, flipTime));
+            }
             StartCoroutine(AnimateCardFlip(90.0f, true, flipTime));
         }
         IEnumerator AnimateDescriptionFade(CanvasGroup canvasGroup, float initValue, float finalValue, float overTime)

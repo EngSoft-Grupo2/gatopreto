@@ -61,8 +61,7 @@ namespace ProjetoGatoPreto
         {
             if (isActive == false)
                 return;
-            GameManager.instance.player.ApplyDecisionEffects(decision);
-            eventData.pointerDrag.GetComponent<CardDrag>().PlayDecisionAnimation();
+            eventData.pointerDrag.GetComponent<Card>().DoDecision(decision);
         }
 
         public void OnPointerEnter(PointerEventData eventData)
