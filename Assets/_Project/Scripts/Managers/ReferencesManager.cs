@@ -28,6 +28,11 @@ namespace ProjetoGatoPreto
         public GameObject helpText;
         public GameObject cardDescription;
         public GameObject cardDescriptionText;
+        public GameObject modal;
+        public GameObject modalText;
+        public GameObject modalRestartButton;
+        public GameObject modalContinueButton;
+        public GameObject cardCounterText;
         public Deck deck;
 
         private void Awake()

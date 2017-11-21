@@ -97,7 +97,6 @@ namespace ProjetoGatoPreto
 
 		private IEnumerator DecisionAnimationSequence(CardDecision decision)
 		{
-			GameManager.instance.player.ApplyDecisionEffects(decision);
 			DisableDrag();
 			DisableFlip();
 			AudioControl.PlayAudioFromSource(onDecisionAudioClip, audioSource);
@@ -112,7 +111,12 @@ namespace ProjetoGatoPreto
 				transform.localScale = Vector3.Lerp(initScale, finalScale, (Time.time - startTime) / overTime);
 				yield return null;
 			}
-			ReferencesManager.instance.deck.DrawNext();
+			GameManager.instance.player.ApplyDecisionEffects(decision);
+
+			ReferencesManager.instance.deck.Discard();
+			if (ReferencesManager.instance.deck.cards.Count >= 0)
+				GameManager.instance.ValidateAttributes();
+			ReferencesManager.instance.deck.Draw();
 			EnableDrag();
 			EnableFlip();
 		}

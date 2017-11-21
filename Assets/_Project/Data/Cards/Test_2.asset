@@ -14,8 +14,7 @@ MonoBehaviour:
   cardName: 
   cardCategory: 1
   cardTexture: {fileID: 21300000, guid: 021fb7e7f9c964b8aa93d45a52dbbeb2, type: 3}
-  cardDescription: "Preciso de uma nova funcionalidade no software e ela precisa ser
-    feita com urg\xEAncia.\r"
+  cardDescription: Tensdhbsc fidnsciubsnlv rhvfiujukfbhfrgb
   leftDecision:
     decisionDescription: Implementa a funcionalidade diretamente.
     decisionEffects:

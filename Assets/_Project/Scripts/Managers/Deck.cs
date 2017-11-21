@@ -25,14 +25,18 @@ namespace ProjetoGatoPreto
 		private CardData topCardData;
 		private Card topCard;
 		private Image bottomCardFrontImage;
+		private ResultsModal modal;
+		private Text cardCounterText;
 
 		/// <summary>
 		/// Awake is called when the script instance is being loaded.
 		/// </summary>
 		void Awake()
 		{
+			modal = ReferencesManager.instance.modal.GetComponent<ResultsModal>();
 			topCard = ReferencesManager.instance.card.GetComponent<Card>();
 			bottomCardFrontImage = ReferencesManager.instance.dummyCardFront.GetComponent<Image>();
+			cardCounterText = ReferencesManager.instance.cardCounterText.GetComponent<Text>();
 		}
 
 		/// <summary>
@@ -45,6 +49,7 @@ namespace ProjetoGatoPreto
 
 			Shuffle();
 			Draw();
+			UpdateCardCounterText();
 		}
 
 		private IEnumerator SpawnCardsSequence()
@@ -78,6 +83,7 @@ namespace ProjetoGatoPreto
 		{
 			if (cards.Count <= 0)
 			{
+				modal.OpenModal(GameManager.instance.GetResultsString(), true, false, false);
 				return null;
 			}
 			else
@@ -93,8 +99,13 @@ namespace ProjetoGatoPreto
 					bottomCardFrontImage.sprite = null;
 					bottomCardFrontImage.color = new Color(0f, 0f, 0f, 0f);
 				}
-				return cards[0];
 			}
+			return cards[0];
+		}
+
+		private void UpdateCardCounterText()
+		{
+			cardCounterText.text = cards.Count.ToString();
 		}
 
 		public void Discard()
@@ -104,6 +115,7 @@ namespace ProjetoGatoPreto
 			{
 				cards.RemoveAt(0);
 			}
+			UpdateCardCounterText();
 		}
 
 		public void DrawNext()

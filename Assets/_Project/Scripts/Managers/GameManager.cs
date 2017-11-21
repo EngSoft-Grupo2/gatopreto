@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -37,9 +38,9 @@ namespace ProjetoGatoPreto
                 get { return _vibration; }
             }
 
-            private Object parent;
+            private object parent;
 
-            public Settings(Object parent)
+            public Settings(object parent)
             {
                 this.parent = parent;
             }
@@ -61,6 +62,18 @@ namespace ProjetoGatoPreto
                 settings = new Settings(this);
                 player = GetComponent<Player>();
             }
+        }
+
+        public void ValidateAttributes()
+        {
+            return;
+        }
+
+        public string GetResultsString()
+        {
+            return "FIM DE JOGO!\n" + 
+            PlayerAttribute.CLIENT.GetDescription() +
+            "\n <b> BOLD TEST </b>\n<i> ITALIC </i>";
         }
     }
 }
