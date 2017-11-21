@@ -69,8 +69,11 @@ namespace ProjetoGatoPreto
 		void Start()
 		{
 			Data = null;
-			EnableDrag();
-			EnableFlip();
+			if (!isDummy)
+			{
+				EnableDrag();
+				EnableFlip();
+			}
 		}
 
 		void UpdateCard()
