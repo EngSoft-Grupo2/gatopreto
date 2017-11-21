@@ -5,6 +5,15 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
+  - enabled: 0
+    path: Assets/_Project/Scenes/Interface Inicial.unity
+    guid: fa859a5ca135a4f36bc5f1212e52291c
+  - enabled: 1
+    path: Assets/_Project/Scenes/Interface Inicial Final.unity
+    guid: dff2c63c491058548920de48883933a5
   - enabled: 1
     path: Assets/_Project/Scenes/Gato.unity
     guid: 4207efc020c45bb479c895498b73be7f
+  - enabled: 1
+    path: Assets/_Project/Scenes/Sobre.unity
+    guid: 197e8891d69acd84892cf9be21ce1c13

@@ -13,8 +13,9 @@ namespace ProjetoGatoPreto
 
         public override void Action()
         {
-            base.Action();
+            
             SceneManager.LoadScene(sceneName);
+            base.Action();
         }
     }
 }
