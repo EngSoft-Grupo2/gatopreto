@@ -392,6 +392,7 @@ namespace UnityEngine.UI.Extensions
                 {
                     if (boxes[i].Contains(lp))
                     {
+                        Application.OpenURL(hrefInfo.name);
                         m_OnHrefClick.Invoke(hrefInfo.name);
                         return;
                     }

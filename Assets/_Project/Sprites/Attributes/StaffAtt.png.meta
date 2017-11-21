@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 24cc74a1a44f636449597b9eea734dfc
-timeCreated: 1508676267
+timeCreated: 1511305553
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -8,6 +8,10 @@ TextureImporter:
     21300002: TeamAtt_1
     21300004: TeamAtt_2
     21300006: TeamAtt_3
+    21300008: StaffAtt_0
+    21300010: StaffAtt_1
+    21300012: StaffAtt_2
+    21300014: StaffAtt_3
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -95,7 +99,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: TeamAtt_0
+      name: StaffAtt_0
       rect:
         serializedVersion: 2
         x: 0
@@ -103,13 +107,13 @@ TextureImporter:
         width: 171
         height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: TeamAtt_1
+      name: StaffAtt_1
       rect:
         serializedVersion: 2
         x: 171
@@ -117,13 +121,13 @@ TextureImporter:
         width: 171
         height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: TeamAtt_2
+      name: StaffAtt_2
       rect:
         serializedVersion: 2
         x: 342
@@ -131,13 +135,13 @@ TextureImporter:
         width: 171
         height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: TeamAtt_3
+      name: StaffAtt_3
       rect:
         serializedVersion: 2
         x: 513
@@ -145,7 +149,7 @@ TextureImporter:
         width: 171
         height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

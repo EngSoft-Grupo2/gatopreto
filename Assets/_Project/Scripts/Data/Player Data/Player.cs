@@ -7,7 +7,16 @@ namespace ProjetoGatoPreto
 {
     public class Player : MonoBehaviour
     {
-        public double[] attributeValues = new double[Enum.GetValues(typeof(PlayerAttribute)).Length];
+        public static float maxAttributeValue = 100f;
+        public static float minAttributeValue = 0f;
+        public static float lowAttributePercentage = 0.1f;
+        public static float highAttributePercentage = 0.8f;
+        public float[] attributeValues = new float[Enum.GetValues(typeof(PlayerAttribute)).Length];
+
+        public float this[PlayerAttribute i] {
+            get { return attributeValues[(int) i]; }
+            set { attributeValues[(int) i] = value; }
+        }
 
         public void ApplyDecisionEffects(CardDecision decision)
         {
