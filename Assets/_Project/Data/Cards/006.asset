@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b227798de7dbc994bbc305ac5668eee3, type: 3}
+  m_Name: 006
+  m_EditorClassIdentifier: 
+  cardName: "D\xEDvida T\xE9cnica"
+  cardCategory: 0
+  cardTexture: {fileID: 0}
+  cardDescription: "A d\xEDvida t\xE9cnica do software est\xE1 crescendo bastante.
+    Deseja tomar alguma provid\xEAncia a respeito?"
+  leftDecision:
+    decisionDescription: Deixa pra depois.
+    decisionEffects:
+    - attribute: 3
+      operation: 2
+      value: -10
+      callEvent: 0
+  rightDecision:
+    decisionDescription: "Vamos nos concentrar em diminuir a d\xEDvida t\xE9cnica."
+    decisionEffects:
+    - attribute: 3
+      operation: 2
+      value: 20
+      callEvent: 0
+    - attribute: 4
+      operation: 2
+      value: -10
+      callEvent: 0
+  helpText: "A d\xEDvida t\xE9cnica representa os aspectos do desenvolvimento que,
+    conscientemente ou n\xE3o, foram implementados da melhor maneira. Eventualmente
+    eles devem ser refatorados para garantir maior qualidade e organiza\xE7\xE3o do
+    software. Mas isso tamb\xE9m implica em tempo de desenvolvimento que n\xE3o \xE9
+    aplicado em novas funcionalidades."
+  bibliography: 

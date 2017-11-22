@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b227798de7dbc994bbc305ac5668eee3, type: 3}
+  m_Name: 005
+  m_EditorClassIdentifier: 
+  cardName: Representante (XP)
+  cardCategory: 1
+  cardTexture: {fileID: 0}
+  cardDescription: "\xC9 necess\xE1rio designar um representante do cliente para acompanhar
+    o projeto?"
+  leftDecision:
+    decisionDescription: "N\xE3o, o cliente n\xE3o faz parte da equipe, consulte-o
+      apenas para aprovar entregas do software."
+    decisionEffects:
+    - attribute: 4
+      operation: 2
+      value: -20
+      callEvent: 0
+    - attribute: 2
+      operation: 2
+      value: 10
+      callEvent: 0
+  rightDecision:
+    decisionDescription: Deve haver um representante do cliente sempre presente na
+      equipe.
+    decisionEffects:
+    - attribute: 4
+      operation: 2
+      value: 20
+      callEvent: 0
+    - attribute: 2
+      operation: 2
+      value: -10
+      callEvent: 0
+  helpText: "No XP, o representante do cliente \xE9 respons\xE1vel por garantir que
+    o desenvolvimento est\xE1 seguindo de acordo com os anseios do cliente."
+  bibliography: 

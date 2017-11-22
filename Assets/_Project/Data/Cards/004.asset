@@ -1,0 +1,53 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b227798de7dbc994bbc305ac5668eee3, type: 3}
+  m_Name: 004
+  m_EditorClassIdentifier: 
+  cardName: Corrida Vazia (XP)
+  cardCategory: 1
+  cardTexture: {fileID: 0}
+  cardDescription: "A corrida acabou de ser fechada, mas nenhum membro iniciou suas
+    tarefas. Voc\xEA viu uma poss\xEDvel mudan\xE7a que pode melhorar a corrida. O
+    que fazer?"
+  leftDecision:
+    decisionDescription: "Uma vez definida, a corrida n\xE3o deve ser alterada."
+    decisionEffects:
+    - attribute: 2
+      operation: 2
+      value: -20
+      callEvent: 0
+    - attribute: 3
+      operation: 2
+      value: 10
+      callEvent: 0
+    - attribute: 1
+      operation: 2
+      value: -40
+      callEvent: 0
+  rightDecision:
+    decisionDescription: "Reabrir a corrida e modific\xE1-la."
+    decisionEffects:
+    - attribute: 2
+      operation: 2
+      value: 10
+      callEvent: 0
+    - attribute: 3
+      operation: 2
+      value: -40
+      callEvent: 0
+    - attribute: 1
+      operation: 2
+      value: -20
+      callEvent: 0
+  helpText: "No XP, caso os objetivos da corrida n\xE3o tenham sido alcan\xE7ados
+    com sucesso, a mesma deveria ser modificada tentando adequ\xE1-la para objetivos
+    condizentes."
+  bibliography: 
