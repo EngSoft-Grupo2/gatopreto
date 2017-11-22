@@ -4867,6 +4867,14 @@ MonoBehaviour:
   cards:
   - {fileID: 11400000, guid: b75ad3f8acf66124fbd7722945fdd2e0, type: 2}
   - {fileID: 11400000, guid: f3e4145a440a48d4d979a087c32d8369, type: 2}
+  - {fileID: 11400000, guid: 770cf1ecb207fdc4bb263a426b981e3c, type: 2}
+  - {fileID: 11400000, guid: 97f969f7b34f48144a36e89032f4f718, type: 2}
+  - {fileID: 11400000, guid: c6046670ba84edb44abe14d375b20357, type: 2}
+  - {fileID: 11400000, guid: 24d8bb3bab9160d448ac1aeefb73be6b, type: 2}
+  - {fileID: 11400000, guid: ab1a92c6a63585a4b95779f46b18aa85, type: 2}
+  - {fileID: 11400000, guid: 6faaf72b9df39ab41b93a706bd54bf94, type: 2}
+  - {fileID: 11400000, guid: eb259559c02ef8848baf2e27396dc5e2, type: 2}
+  - {fileID: 11400000, guid: f67235ad0cf7c954493e03556d57f264, type: 2}
 --- !u!1 &1977241826
 GameObject:
   m_ObjectHideFlags: 0

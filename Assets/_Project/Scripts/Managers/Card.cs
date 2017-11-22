@@ -101,7 +101,7 @@ namespace ProjetoGatoPreto
 			DisableFlip();
 			AudioControl.PlayAudioFromSource(onDecisionAudioClip, audioSource);
 			float startTime = Time.time,
-				overTime = 1.0f;
+				overTime = 0.5f;
 			Vector3 initScale = new Vector3(1.0f, 1.0f, 1.0f);
 			Vector3 finalScale = new Vector3(2.0f, 2.0f, 2.0f);
 
@@ -113,6 +113,8 @@ namespace ProjetoGatoPreto
 			}
 			GameManager.instance.player.ApplyDecisionEffects(decision);
 
+			ReferencesManager.instance.leftDropZone.transform.Find("Decision").GetComponent<CanvasGroup>().alpha = 0;
+			ReferencesManager.instance.rightDropZone.transform.Find("Decision").GetComponent<CanvasGroup>().alpha = 0;
 			ReferencesManager.instance.deck.Discard();
 			if (ReferencesManager.instance.deck.cards.Count >= 0)
 				GameManager.instance.ValidateAttributes();

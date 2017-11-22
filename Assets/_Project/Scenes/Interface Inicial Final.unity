@@ -254,8 +254,8 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 26082904}
-  - component: {fileID: 26082906}
   - component: {fileID: 26082905}
+  - component: {fileID: 26082906}
   m_Layer: 5
   m_Name: Game Manager
   m_TagString: Untagged
@@ -435,7 +435,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Version 1.0.0
+  m_Text: Version 1.0.0TEST
 --- !u!222 &297826881
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1485,6 +1485,7 @@ GameObject:
   - component: {fileID: 1776371473}
   - component: {fileID: 1776371472}
   - component: {fileID: 1776371475}
+  - component: {fileID: 1776371474}
   m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
@@ -1507,7 +1508,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 66, y: 30}
+  m_AnchoredPosition: {x: 78.84, y: 30}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1776371472
@@ -1542,7 +1543,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: 'Gato Preto
+  m_Text: 'Gato Preto_XP
 
 '
 --- !u!222 &1776371473
@@ -1551,6 +1552,20 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1776371470}
+--- !u!114 &1776371474
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1776371470}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db125c7de00668f4e98849d0aaf366d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0.9607844, g: 0.5568628, b: 0.21568629, a: 0.5}
+  m_EffectDistance: {x: 1, y: -1}
+  m_UseGraphicAlpha: 1
 --- !u!114 &1776371475
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1564,7 +1579,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _gradientMode: 0
   _gradientDir: 0
-  _overwriteAllColor: 0
+  _overwriteAllColor: 1
   _vertex1: {r: 0.625, g: 0.625, b: 0.625, a: 1}
   _vertex2: {r: 0, g: 0, b: 0, a: 1}
 --- !u!1 &1883136197

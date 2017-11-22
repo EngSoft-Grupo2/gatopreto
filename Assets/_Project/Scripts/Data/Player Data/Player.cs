@@ -12,7 +12,7 @@ namespace ProjetoGatoPreto
         public static float lowAttributePercentage = 0.1f;
         public static float highAttributePercentage = 0.8f;
         public static float initValues = 50f;
-        private float[] attributeValues = new float[Enum.GetValues(typeof(PlayerAttribute)).Length];
+        public float[] attributeValues = new float[Enum.GetValues(typeof(PlayerAttribute)).Length];
 
         public float this [PlayerAttribute i]
         {
