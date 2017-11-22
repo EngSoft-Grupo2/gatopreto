@@ -24,7 +24,7 @@ namespace ProjetoGatoPreto
 
         public class Settings
         {
-            private bool _audio;
+            private bool _audio = true;
             public bool audio
             {
                 set { _audio = value; }

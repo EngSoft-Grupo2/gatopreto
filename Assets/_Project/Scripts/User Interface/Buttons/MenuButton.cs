@@ -20,7 +20,8 @@ namespace ProjetoGatoPreto
 
         public virtual void Action()
         {
-            audioSource.Play();
+            if (audioSource && GameManager.instance.settings.audio)
+                audioSource.Play();
         }
     }
 }
