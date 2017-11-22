@@ -10,11 +10,12 @@ namespace ProjetoGatoPreto
     public class LoadSceneButton : MenuButton
     {
         public string sceneName;
+        public Color fadeColor = Color.black;
+        public float fadeTime = 0.5f;
 
         public override void Action()
         {
-            
-            SceneManager.LoadScene(sceneName);
+            Initiate.Fade(sceneName, fadeColor, fadeTime);
             base.Action();
         }
     }
