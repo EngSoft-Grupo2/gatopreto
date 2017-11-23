@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b227798de7dbc994bbc305ac5668eee3, type: 3}
+  m_Name: 039
+  m_EditorClassIdentifier: 
+  cardName: Redes Sociais
+  cardCategory: 0
+  cardTexture: {fileID: 0}
+  cardDescription: "Ei, eu queria  que o software fosse compat\xEDvel com redes sociais,
+    podemos acrescentar isso?"
+  leftDecision:
+    decisionDescription: "Claro, mas n\xE3o agora."
+    decisionEffects:
+    - attribute: 3
+      operation: 2
+      value: 20
+      callEvent: 0
+  rightDecision:
+    decisionDescription: "\xC9 pra ja!"
+    decisionEffects:
+    - attribute: 1
+      operation: 2
+      value: 40
+      callEvent: 0
+    - attribute: 2
+      operation: 2
+      value: -20
+      callEvent: 0
+  helpText: 
+  bibliography: 
