@@ -13,7 +13,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cardName: "Est\xE1gios"
   cardCategory: 0
-  cardTexture: {fileID: 0}
+  cardTexture: {fileID: 21300000, guid: b0aff998c0ffa6240aeeb5e98df848cc, type: 3}
   cardDescription: "Seu time agora far\xE1 parte do programa de est\xE1gios da empresa,
     qual voc\xEA prefere?"
   leftDecision:
@@ -22,21 +22,37 @@ MonoBehaviour:
     - attribute: 2
       operation: 2
       value: 10
-      callEvent: 0
+      callEvent:
+        m_PersistentCalls:
+          m_Calls: []
+        m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
+          PublicKeyToken=null
     - attribute: 3
       operation: 2
       value: -20
-      callEvent: 0
+      callEvent:
+        m_PersistentCalls:
+          m_Calls: []
+        m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
+          PublicKeyToken=null
   rightDecision:
     decisionDescription: "Designer estagi\xE1rio."
     decisionEffects:
     - attribute: 2
       operation: 2
       value: 10
-      callEvent: 0
+      callEvent:
+        m_PersistentCalls:
+          m_Calls: []
+        m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
+          PublicKeyToken=null
     - attribute: 4
       operation: 2
       value: -20
-      callEvent: 0
+      callEvent:
+        m_PersistentCalls:
+          m_Calls: []
+        m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
+          PublicKeyToken=null
   helpText: 
   bibliography: 

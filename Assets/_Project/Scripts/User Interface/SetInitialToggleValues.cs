@@ -10,12 +10,18 @@ namespace ProjetoGatoPreto
 
 		public Toggle vibrationToggle;
 		public Toggle audioToggle;
+		public AudioClip audioClip;
 
 		// Use this for initialization
 		void Start()
 		{
-			vibrationToggle.isOn = GameManager.instance.settings.vibration;
-			audioToggle.isOn = GameManager.instance.settings.audio;
+			
+			vibrationToggle.Set(GameManager.instance.settings.vibration, false);
+			audioToggle.Set(GameManager.instance.settings.audio, false);
+			if (GameManager.instance.firstTimeLoaded) {
+				AudioControl.PlayAudioFromSource(audioClip, true);
+				GameManager.instance.firstTimeLoaded = false;
+			}
 		}
 	}
 }

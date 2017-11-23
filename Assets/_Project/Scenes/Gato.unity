@@ -1600,6 +1600,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 770613329}
+        m_MethodName: Action
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &770613326
@@ -1668,7 +1679,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7a1ab38d306fce47b1c40b5eaa9a76b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioClip: {fileID: 0}
+  audioClip: {fileID: 8300000, guid: aadc2bc91dc4a2f4bbd6f24728507b0f, type: 3}
+  loop: {fileID: 8300000, guid: fbfaa252771bff444bee8d5c731ea82b, type: 3}
   sceneName: Interface Inicial Final
   fadeColor: {r: 0, g: 0, b: 0, a: 1}
   fadeTime: 0.5
@@ -2288,7 +2300,6 @@ GameObject:
   - component: {fileID: 846581384}
   - component: {fileID: 846581390}
   - component: {fileID: 846581392}
-  - component: {fileID: 846581391}
   m_Layer: 5
   m_Name: Card
   m_TagString: Untagged
@@ -2724,86 +2735,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   flipTime: 0.25
   canFlip: 0
---- !u!82 &846581391
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 846581379}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 2
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    - serializedVersion: 2
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 2
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 0
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 2
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 2
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 0
 --- !u!114 &846581392
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2817,7 +2748,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   defaultCard: {fileID: 11400000, guid: ea5a37bc4807f9b488b567f1e08b045c, type: 2}
   isDummy: 0
-  onDecisionAudioClip: {fileID: 0}
+  onDecisionAudioClip: {fileID: 8300000, guid: 3260682f3103f7d429ea1eba34f67797, type: 3}
 --- !u!1 &885385861
 GameObject:
   m_ObjectHideFlags: 0
@@ -3051,6 +2982,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   openCloseTime: 0.5
+  audioClip: {fileID: 8300000, guid: 1fa197ff391883d4982b7e9f3f194795, type: 3}
 --- !u!225 &977224914
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -3962,7 +3894,7 @@ RectTransform:
   m_Father: {fileID: 91241834}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMin: {x: 0.2, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
@@ -4401,7 +4333,7 @@ RectTransform:
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0.3, y: 1}
+  m_AnchorMax: {x: 0.4, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -4450,7 +4382,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fadeTime: 0.1
-  audioClip: {fileID: 8300000, guid: 68a43b35ba1a8f6478e41a490e029ff7, type: 3}
+  audioClip: {fileID: 8300000, guid: ceff080876c3cd047805e19e2e41ef76, type: 3}
 --- !u!61 &1652471252
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4774,7 +4706,7 @@ RectTransform:
   m_Father: {fileID: 1279533065}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.7, y: 0}
+  m_AnchorMin: {x: 0.6, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
@@ -4824,7 +4756,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fadeTime: 0.1
-  audioClip: {fileID: 8300000, guid: 68a43b35ba1a8f6478e41a490e029ff7, type: 3}
+  audioClip: {fileID: 8300000, guid: ceff080876c3cd047805e19e2e41ef76, type: 3}
 --- !u!61 &1823723787
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4961,6 +4893,20 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 4c679bb7e45ddd74299496e4ae7f69dc, type: 2}
   - {fileID: 11400000, guid: ee1b65e430f04d14a971fe79b48b3b51, type: 2}
   - {fileID: 11400000, guid: 0460104cf9704ea4e8721b4ae1f0bbad, type: 2}
+  - {fileID: 11400000, guid: 0460104cf9704ea4e8721b4ae1f0bbad, type: 2}
+  - {fileID: 11400000, guid: ba1f8fabece44f943a6c1075023e813e, type: 2}
+  - {fileID: 11400000, guid: fc303489a9193fd46aead9975b003e1f, type: 2}
+  - {fileID: 11400000, guid: 1a05d9379512176459c0b1c0ab4de308, type: 2}
+  - {fileID: 11400000, guid: 039455f49f20db14eb1dd055faa65d3d, type: 2}
+  - {fileID: 11400000, guid: 90b8bc68f9bf48c4698434eda518debf, type: 2}
+  - {fileID: 11400000, guid: b08eb431ebe39cd4d847d01bf7ff93dc, type: 2}
+  - {fileID: 11400000, guid: 4b9b81eb5f253e940bd00af8d2f5c354, type: 2}
+  - {fileID: 11400000, guid: bb81a1b21a3c8e54e9b113e30bd9abcf, type: 2}
+  - {fileID: 11400000, guid: 5c36332a50969054ca7fc5ec0dc428ac, type: 2}
+  - {fileID: 11400000, guid: b7e311a3a65d1bf418498e81a59890bf, type: 2}
+  - {fileID: 11400000, guid: c54119f93c4f3c445bc6b95047b63f13, type: 2}
+  - {fileID: 11400000, guid: 9eb5f1dbad488c546866bdd049139d71, type: 2}
+  - {fileID: 11400000, guid: ccb499643f9658c48b5c259535b04fe6, type: 2}
 --- !u!1 &1977241826
 GameObject:
   m_ObjectHideFlags: 0
@@ -5374,6 +5320,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioClip: {fileID: 8300000, guid: aedd668589b362e4993adfdb4a75e53d, type: 3}
+  loop: {fileID: 0}
 --- !u!1 &2139629251
 GameObject:
   m_ObjectHideFlags: 0
@@ -5406,7 +5353,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMax: {x: 0.8, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}

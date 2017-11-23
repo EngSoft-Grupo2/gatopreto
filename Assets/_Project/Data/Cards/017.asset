@@ -13,7 +13,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cardName: "M\xE1quina de Caf\xE9"
   cardCategory: 0
-  cardTexture: {fileID: 0}
+  cardTexture: {fileID: 21300000, guid: e2497e35078674f2583721b3afff6bfc, type: 3}
   cardDescription: "Ent\xE3o, Chefe, que tal uma m\xE1quina de caf\xE9 para a copa?"
   leftDecision:
     decisionDescription: "Talvez m\xEAs que vem."
@@ -21,21 +21,37 @@ MonoBehaviour:
     - attribute: 2
       operation: 2
       value: -20
-      callEvent: 0
+      callEvent:
+        m_PersistentCalls:
+          m_Calls: []
+        m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
+          PublicKeyToken=null
     - attribute: 1
       operation: 2
       value: 20
-      callEvent: 0
+      callEvent:
+        m_PersistentCalls:
+          m_Calls: []
+        m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
+          PublicKeyToken=null
   rightDecision:
     decisionDescription: Boa ideia.
     decisionEffects:
     - attribute: 2
       operation: 2
       value: 20
-      callEvent: 0
+      callEvent:
+        m_PersistentCalls:
+          m_Calls: []
+        m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
+          PublicKeyToken=null
     - attribute: 1
       operation: 2
       value: -20
-      callEvent: 0
+      callEvent:
+        m_PersistentCalls:
+          m_Calls: []
+        m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
+          PublicKeyToken=null
   helpText: 
   bibliography: 

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cardName: "Or\xE7amento"
   cardCategory: 0
-  cardTexture: {fileID: 0}
+  cardTexture: {fileID: 21300000, guid: b6e7ca90da63d49348908cd0988033cd, type: 3}
   cardDescription: "Nosso or\xE7amento permite que contratemos, o que voc\xEA acha?"
   leftDecision:
     decisionDescription: "Ainda n\xE3o."
@@ -21,13 +21,21 @@ MonoBehaviour:
     - attribute: 1
       operation: 2
       value: 20
-      callEvent: 0
+      callEvent:
+        m_PersistentCalls:
+          m_Calls: []
+        m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
+          PublicKeyToken=null
   rightDecision:
     decisionDescription: Contratar programador.
     decisionEffects:
     - attribute: 2
       operation: 2
       value: 20
-      callEvent: 0
+      callEvent:
+        m_PersistentCalls:
+          m_Calls: []
+        m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
+          PublicKeyToken=null
   helpText: 
   bibliography: 

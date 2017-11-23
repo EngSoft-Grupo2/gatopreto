@@ -243,6 +243,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioClip: {fileID: 8300000, guid: c8a3453e22e433b4a87c4e1cc01cae2e, type: 3}
+  loop: {fileID: 8300000, guid: a024970846ac04441aa2750acfe03c06, type: 3}
   sceneName: Gato
   fadeColor: {r: 0, g: 0, b: 0, a: 1}
   fadeTime: 0.5
@@ -589,6 +590,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioClip: {fileID: 8300000, guid: c8a3453e22e433b4a87c4e1cc01cae2e, type: 3}
+  loop: {fileID: 0}
 --- !u!1 &1055739574
 GameObject:
   m_ObjectHideFlags: 0
@@ -882,6 +884,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioClip: {fileID: 8300000, guid: c8a3453e22e433b4a87c4e1cc01cae2e, type: 3}
+  loop: {fileID: 0}
   sceneName: Sobre
   fadeColor: {r: 0.33823532, g: 0.33823532, b: 0.33823532, a: 1}
   fadeTime: 5
@@ -1584,7 +1587,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Gato Preto
+  m_Text: "Paci\xEAncia Dev"
 --- !u!222 &1776371473
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1730,6 +1733,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   vibrationToggle: {fileID: 2049742986}
   audioToggle: {fileID: 946121313}
+  audioClip: {fileID: 8300000, guid: fbfaa252771bff444bee8d5c731ea82b, type: 3}
 --- !u!1 &1957313357
 GameObject:
   m_ObjectHideFlags: 0
@@ -1998,6 +2002,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioClip: {fileID: 8300000, guid: c8a3453e22e433b4a87c4e1cc01cae2e, type: 3}
+  loop: {fileID: 0}
 --- !u!1 &2059171818
 GameObject:
   m_ObjectHideFlags: 0

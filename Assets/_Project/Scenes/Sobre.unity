@@ -410,6 +410,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioClip: {fileID: 8300000, guid: c8a3453e22e433b4a87c4e1cc01cae2e, type: 3}
+  loop: {fileID: 0}
   sceneName: Interface Inicial Final
   fadeColor: {r: 0.33823532, g: 0.33823532, b: 0.33823532, a: 1}
   fadeTime: 5
@@ -1178,9 +1179,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: 'Gato Preto
-
-'
+  m_Text: "Paci\xEAncia Dev"
 --- !u!222 &1504689417
 CanvasRenderer:
   m_ObjectHideFlags: 0

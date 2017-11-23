@@ -18,6 +18,8 @@ namespace ProjetoGatoPreto
                 {
                     var obj = new GameObject("Game Manager");
                     obj.AddComponent<AudioSource>();
+                    obj.AddComponent<AudioSource>();
+                    obj.GetComponents<AudioSource>()[1].loop = true;
                     _instance = obj.AddComponent<GameManager>();
                 }
                 return _instance;
@@ -31,6 +33,8 @@ namespace ProjetoGatoPreto
             {
                 set {
                     _audio = value;
+                    GameManager.instance.audioSource.mute = !value;
+                    GameManager.instance.loopAudioSource.mute = !value;
                 }
                 get { return _audio; }
             }
@@ -55,6 +59,8 @@ namespace ProjetoGatoPreto
 
         public Player player;
         public AudioSource audioSource;
+        public AudioSource loopAudioSource;
+        public bool firstTimeLoaded = true;
 
         private void Awake()
         {
@@ -68,7 +74,10 @@ namespace ProjetoGatoPreto
                 DontDestroyOnLoad(this.gameObject);
                 settings = new Settings(this);
                 player = GetComponent<Player>();
-                audioSource = GetComponent<AudioSource>();
+                audioSource = GetComponents<AudioSource>()[0];
+                loopAudioSource = GetComponents<AudioSource>()[1];
+                settings.audio = true;
+                settings.vibration = true;
             }
         }
 
@@ -121,7 +130,11 @@ namespace ProjetoGatoPreto
 
         public string GetResultsString()
         {
-            return "FIM DE JOGO!\n";
+            string t = "FIM DE JOGO: PROJETO CONCLUIDO!\n\n";
+            for (int i = 1; i < player.attributeValues.Length; i++)
+                t += ((PlayerAttribute) i).GetDescription() + ": " + ((int)player[(PlayerAttribute) i]).ToString() + "%\n";
+            t += "\nPara saber mais sobre o processo de desenvolvimento no XP e melhorar a sua pontuação, visite nossa wiki <a href=https://github.com/EngSoft-Grupo2/gatopreto/wiki>clicando aqui</a>!";
+            return t;
             /*       ""
             PlayerAttribute.CLIENT.GetDescription() +
             "\n <b> BOLD TEST </b>\n<i> ITALIC </i>\n" +

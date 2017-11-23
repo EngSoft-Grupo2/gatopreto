@@ -10,6 +10,7 @@ namespace ProjetoGatoPreto
 	{
 
 		public float openCloseTime = 0.5f;
+		public AudioClip audioClip;
 		/// <summary>
 		/// Awake is called when the script instance is being loaded.
 		/// </summary>
@@ -60,6 +61,7 @@ namespace ProjetoGatoPreto
                 canvasGroup.alpha = Mathf.Lerp(initValue, finalValue, (Time.time - startTime) / openCloseTime);
                 yield return null;
             }
+			AudioControl.PlayAudioFromSource(audioClip);
             canvasGroup.alpha = finalValue;
         }
 

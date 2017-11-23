@@ -11,10 +11,13 @@ namespace ProjetoGatoPreto
     public class MenuButton : MonoBehaviour
     {
         public AudioClip audioClip;
+        public AudioClip loop;
 
         public virtual void Action()
         {
             AudioControl.PlayAudioFromSource(audioClip);
+            if (loop != null)
+                AudioControl.PlayAudioFromSource(loop, true);
         }
     }
 }

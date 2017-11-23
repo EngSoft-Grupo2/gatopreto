@@ -5,11 +5,13 @@ namespace ProjetoGatoPreto {
     public class ToggleSoundAndVib : MonoBehaviour {
 
         public void toggleAudio() {
-            GameManager.instance.settings.audio = !GameManager.instance.settings.audio;
+            if (!GameManager.instance.firstTimeLoaded)
+                GameManager.instance.settings.audio = !GameManager.instance.settings.audio;
         }
 
         public void toggleVib() {
-            GameManager.instance.settings.vibration = !GameManager.instance.settings.vibration;
+            if (!GameManager.instance.firstTimeLoaded)
+                GameManager.instance.settings.vibration = !GameManager.instance.settings.vibration;
         }
     }
 }
