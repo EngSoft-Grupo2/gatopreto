@@ -99,9 +99,9 @@ namespace ProjetoGatoPreto
 		{
 			DisableDrag();
 			DisableFlip();
-			AudioControl.PlayAudioFromSource(onDecisionAudioClip, audioSource);
+			AudioControl.PlayAudioFromSource(onDecisionAudioClip);
 			float startTime = Time.time,
-				overTime = 0.5f;
+				overTime = 0.25f;
 			Vector3 initScale = new Vector3(1.0f, 1.0f, 1.0f);
 			Vector3 finalScale = new Vector3(2.0f, 2.0f, 2.0f);
 
@@ -118,6 +118,7 @@ namespace ProjetoGatoPreto
 			ReferencesManager.instance.deck.Discard();
 			if (ReferencesManager.instance.deck.cards.Count >= 0)
 				GameManager.instance.ValidateAttributes();
+			yield return new WaitForSeconds(0.1f);
 			ReferencesManager.instance.deck.Draw();
 			EnableDrag();
 			EnableFlip();

@@ -156,7 +156,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -865,7 +865,14 @@ MonoBehaviour:
   modalRestartButton: {fileID: 770613321}
   modalContinueButton: {fileID: 780998756}
   cardCounterText: {fileID: 259960215}
+  attributes:
+  - {fileID: 0}
+  - {fileID: 1749429546}
+  - {fileID: 163637209}
+  - {fileID: 1977241826}
+  - {fileID: 1445537453}
   deck: {fileID: 1864239882}
+  buttonClick: {fileID: 8300000, guid: c8a3453e22e433b4a87c4e1cc01cae2e, type: 3}
 --- !u!4 &383788021
 Transform:
   m_ObjectHideFlags: 0
@@ -1120,7 +1127,7 @@ RectTransform:
   m_Children:
   - {fileID: 259960216}
   m_Father: {fileID: 1864239879}
-  m_RootOrder: 2
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1.1, y: 1}
   m_AnchorMax: {x: 1.1, y: 1}
@@ -1661,7 +1668,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7a1ab38d306fce47b1c40b5eaa9a76b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioSource: {fileID: 0}
+  audioClip: {fileID: 0}
   sceneName: Interface Inicial Final
   fadeColor: {r: 0, g: 0, b: 0, a: 1}
   fadeTime: 0.5
@@ -2841,7 +2848,7 @@ RectTransform:
   m_Children:
   - {fileID: 482544169}
   m_Father: {fileID: 1864239879}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0.4}
@@ -2940,7 +2947,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -3208,7 +3215,7 @@ RectTransform:
   - {fileID: 812102314}
   - {fileID: 846581380}
   m_Father: {fileID: 1864239879}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -3409,7 +3416,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -3513,6 +3520,7 @@ GameObject:
   - component: {fileID: 1331937665}
   - component: {fileID: 1331937664}
   - component: {fileID: 1331937663}
+  - component: {fileID: 1331937668}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -3590,6 +3598,86 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &1331937668
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1331937662}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
 --- !u!1 &1383657400
 GameObject:
   m_ObjectHideFlags: 0
@@ -4361,7 +4449,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16e8e7f9bfff6dc48bbddda00025e684, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fadeTime: 0.25
+  fadeTime: 0.1
+  audioClip: {fileID: 8300000, guid: 68a43b35ba1a8f6478e41a490e029ff7, type: 3}
 --- !u!61 &1652471252
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4546,7 +4635,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -4734,7 +4823,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16e8e7f9bfff6dc48bbddda00025e684, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fadeTime: 0.25
+  fadeTime: 0.1
+  audioClip: {fileID: 8300000, guid: 68a43b35ba1a8f6478e41a490e029ff7, type: 3}
 --- !u!61 &1823723787
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4808,9 +4898,9 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 533374635}
   - {fileID: 1158636374}
   - {fileID: 885385862}
-  - {fileID: 533374635}
   m_Father: {fileID: 1285987373}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4865,16 +4955,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cardPrefab: {fileID: 0}
   cards:
-  - {fileID: 11400000, guid: b75ad3f8acf66124fbd7722945fdd2e0, type: 2}
-  - {fileID: 11400000, guid: f3e4145a440a48d4d979a087c32d8369, type: 2}
-  - {fileID: 11400000, guid: 770cf1ecb207fdc4bb263a426b981e3c, type: 2}
-  - {fileID: 11400000, guid: 97f969f7b34f48144a36e89032f4f718, type: 2}
-  - {fileID: 11400000, guid: c6046670ba84edb44abe14d375b20357, type: 2}
-  - {fileID: 11400000, guid: 24d8bb3bab9160d448ac1aeefb73be6b, type: 2}
-  - {fileID: 11400000, guid: ab1a92c6a63585a4b95779f46b18aa85, type: 2}
-  - {fileID: 11400000, guid: 6faaf72b9df39ab41b93a706bd54bf94, type: 2}
-  - {fileID: 11400000, guid: eb259559c02ef8848baf2e27396dc5e2, type: 2}
-  - {fileID: 11400000, guid: f67235ad0cf7c954493e03556d57f264, type: 2}
+  - {fileID: 11400000, guid: c5ff7600b5f4a9c41a2b34d3e8d0abc7, type: 2}
+  - {fileID: 11400000, guid: f16f4f9d8849fde4faa30b109aa96f4d, type: 2}
+  - {fileID: 11400000, guid: 09e2e70a697ba9140837e62a33375078, type: 2}
+  - {fileID: 11400000, guid: 4c679bb7e45ddd74299496e4ae7f69dc, type: 2}
+  - {fileID: 11400000, guid: ee1b65e430f04d14a971fe79b48b3b51, type: 2}
+  - {fileID: 11400000, guid: 0460104cf9704ea4e8721b4ae1f0bbad, type: 2}
 --- !u!1 &1977241826
 GameObject:
   m_ObjectHideFlags: 0
@@ -5035,6 +5121,7 @@ GameObject:
   - component: {fileID: 2049364275}
   - component: {fileID: 2049364274}
   - component: {fileID: 2049364273}
+  - component: {fileID: 2049364276}
   m_Layer: 5
   m_Name: Info Button
   m_TagString: Untagged
@@ -5262,8 +5349,31 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 2049364276}
+        m_MethodName: Action
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!114 &2049364276
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2049364268}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 031fd39faa9acce40be6a159353ac930, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioClip: {fileID: 8300000, guid: aedd668589b362e4993adfdb4a75e53d, type: 3}
 --- !u!1 &2139629251
 GameObject:
   m_ObjectHideFlags: 0

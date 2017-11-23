@@ -242,63 +242,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7a1ab38d306fce47b1c40b5eaa9a76b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioSource: {fileID: 0}
+  audioClip: {fileID: 8300000, guid: c8a3453e22e433b4a87c4e1cc01cae2e, type: 3}
   sceneName: Gato
   fadeColor: {r: 0, g: 0, b: 0, a: 1}
   fadeTime: 0.5
---- !u!1 &26082903
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 26082904}
-  - component: {fileID: 26082905}
-  - component: {fileID: 26082906}
-  m_Layer: 5
-  m_Name: Game Manager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &26082904
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 26082903}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &26082905
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 26082903}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f491333e63ad9f2499b4b1caf084c323, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 26082906}
---- !u!114 &26082906
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 26082903}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8c8ee19850eff6f47aebf8d3562e670b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &281959666
 GameObject:
   m_ObjectHideFlags: 0
@@ -435,7 +382,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Version 1.0.0TEST
+  m_Text: Version 1.0.0
 --- !u!222 &297826881
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -535,6 +482,7 @@ GameObject:
   - component: {fileID: 946121312}
   - component: {fileID: 946121313}
   - component: {fileID: 946121314}
+  - component: {fileID: 946121315}
   m_Layer: 5
   m_Name: Audio
   m_TagString: Untagged
@@ -629,6 +577,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 233c447b82179534d9c735941c09a7aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &946121315
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 946121311}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 031fd39faa9acce40be6a159353ac930, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioClip: {fileID: 8300000, guid: c8a3453e22e433b4a87c4e1cc01cae2e, type: 3}
 --- !u!1 &1055739574
 GameObject:
   m_ObjectHideFlags: 0
@@ -921,7 +881,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7a1ab38d306fce47b1c40b5eaa9a76b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioSource: {fileID: 0}
+  audioClip: {fileID: 8300000, guid: c8a3453e22e433b4a87c4e1cc01cae2e, type: 3}
   sceneName: Sobre
   fadeColor: {r: 0.33823532, g: 0.33823532, b: 0.33823532, a: 1}
   fadeTime: 5
@@ -1192,6 +1152,7 @@ GameObject:
   - component: {fileID: 1331937665}
   - component: {fileID: 1331937664}
   - component: {fileID: 1331937663}
+  - component: {fileID: 1331937668}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1269,6 +1230,86 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &1331937668
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1331937662}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
 --- !u!1 &1626169605
 GameObject:
   m_ObjectHideFlags: 0
@@ -1543,9 +1584,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: 'Gato Preto_XP
-
-'
+  m_Text: Gato Preto
 --- !u!222 &1776371473
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1852,6 +1891,7 @@ GameObject:
   - component: {fileID: 2049742985}
   - component: {fileID: 2049742986}
   - component: {fileID: 2049742987}
+  - component: {fileID: 2049742988}
   m_Layer: 5
   m_Name: Vibration
   m_TagString: Untagged
@@ -1946,6 +1986,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 233c447b82179534d9c735941c09a7aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &2049742988
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2049742984}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 031fd39faa9acce40be6a159353ac930, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioClip: {fileID: 8300000, guid: c8a3453e22e433b4a87c4e1cc01cae2e, type: 3}
 --- !u!1 &2059171818
 GameObject:
   m_ObjectHideFlags: 0

@@ -17,6 +17,7 @@ namespace ProjetoGatoPreto
                 if (_instance == null)
                 {
                     var obj = new GameObject("Game Manager");
+                    obj.AddComponent<AudioSource>();
                     _instance = obj.AddComponent<GameManager>();
                 }
                 return _instance;
@@ -53,6 +54,7 @@ namespace ProjetoGatoPreto
         public Settings settings;
 
         public Player player;
+        public AudioSource audioSource;
 
         private void Awake()
         {
@@ -66,6 +68,7 @@ namespace ProjetoGatoPreto
                 DontDestroyOnLoad(this.gameObject);
                 settings = new Settings(this);
                 player = GetComponent<Player>();
+                audioSource = GetComponent<AudioSource>();
             }
         }
 
@@ -74,7 +77,7 @@ namespace ProjetoGatoPreto
             System.Random r = new System.Random();
             float minAttribute = 10f;
 
-            foreach (int i in Enumerable.Range(1, player.attributeValues.Length).OrderBy(x => r.Next()))
+            foreach (int i in Enumerable.Range(1, player.attributeValues.Length-1).OrderBy(x => r.Next()))
             {
                 if (player[(PlayerAttribute) i] < minAttribute)
                 {
@@ -94,7 +97,7 @@ namespace ProjetoGatoPreto
             {
                 case PlayerAttribute.MONEY:
                     return ":(\n\n" +
-                            "Suas decisões fizeram com que <color=red>o orçamento do projeto acabasse se esgototando</color>!\n" +
+                            "Suas decisões fizeram com que <color=red>o orçamento do projeto acabasse se esgotando</color>!\n" +
                             "No Extreme Programming, é uma boa prática estimar o orçamento a partir de sistemas prontos e rodando, ao invéz de confiar em um planejamento feito antes.\n" +
                             "Para saber mais sobre decisões de orçamento no contexto do XP, <a href=http://wiki.c2.com/?CostingExtremeProgramming>clique aqui</a>.";
                 case PlayerAttribute.STAFF:
@@ -109,7 +112,7 @@ namespace ProjetoGatoPreto
                            "Para saber mais sobre a qualidade de software no XP, <a href=http://wiki.c2.com/?ExtremeProgrammingQualityAssurance>clique aqui</a>.";
                 case PlayerAttribute.CLIENT:
                     return ":(\n\n" +
-                           "Suas decisões fizeram com que <color=red>o cliente quisesse cancelar o projeto</b>!\n" +
+                           "Suas decisões fizeram com que <color=red>o cliente quisesse cancelar o projeto</color>!\n" +
                            "No Extreme Programming, o cliente é o papel mais importante em um projeto: ele é responsável por prover os requisitos e medir a qualidade.\n" +
                            "Para saber mais sobre o papel dos clientes no XP, <a href=http://researcharchive.vuw.ac.nz/handle/10063/877>clique aqui</a>.";
             }

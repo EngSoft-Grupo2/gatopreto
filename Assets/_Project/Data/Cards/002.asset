@@ -13,7 +13,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cardName: Nova Funcionalidade (XP)
   cardCategory: 1
-  cardTexture: {fileID: 0}
+  cardTexture: {fileID: 21300000, guid: a8ea60f8b7340432bb3a95594f6f9c0e, type: 3}
   cardDescription: "Preciso de uma nova funcionalidade no software e ela precisa ser
     feita com urg\xEAncia."
   leftDecision:
@@ -22,22 +22,38 @@ MonoBehaviour:
     - attribute: 4
       operation: 2
       value: 20
-      callEvent: 0
+      callEvent:
+        m_PersistentCalls:
+          m_Calls: []
+        m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
+          PublicKeyToken=null
     - attribute: 3
       operation: 2
       value: -20
-      callEvent: 0
+      callEvent:
+        m_PersistentCalls:
+          m_Calls: []
+        m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
+          PublicKeyToken=null
   rightDecision:
     decisionDescription: Cria os testes antes de implementar a funcionalidade.
     decisionEffects:
     - attribute: 3
       operation: 2
       value: 20
-      callEvent: 0
+      callEvent:
+        m_PersistentCalls:
+          m_Calls: []
+        m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
+          PublicKeyToken=null
     - attribute: 4
       operation: 2
       value: -20
-      callEvent: 0
+      callEvent:
+        m_PersistentCalls:
+          m_Calls: []
+        m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
+          PublicKeyToken=null
   helpText: "No contexto do XP, os testes de uma nova funcionalidade geralmente s\xE3o
     criados antes da funcionalidade. Assim o desenvolvimento pode ser direcionado
     pelos testes."

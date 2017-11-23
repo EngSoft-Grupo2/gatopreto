@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Name: 006
   m_EditorClassIdentifier: 
   cardName: "D\xEDvida T\xE9cnica"
-  cardCategory: 0
-  cardTexture: {fileID: 0}
+  cardCategory: 1
+  cardTexture: {fileID: 21300000, guid: e2497e35078674f2583721b3afff6bfc, type: 3}
   cardDescription: "A d\xEDvida t\xE9cnica do software est\xE1 crescendo bastante.
     Deseja tomar alguma provid\xEAncia a respeito?"
   leftDecision:
@@ -22,18 +22,30 @@ MonoBehaviour:
     - attribute: 3
       operation: 2
       value: -10
-      callEvent: 0
+      callEvent:
+        m_PersistentCalls:
+          m_Calls: []
+        m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
+          PublicKeyToken=null
   rightDecision:
     decisionDescription: "Vamos nos concentrar em diminuir a d\xEDvida t\xE9cnica."
     decisionEffects:
     - attribute: 3
       operation: 2
       value: 20
-      callEvent: 0
+      callEvent:
+        m_PersistentCalls:
+          m_Calls: []
+        m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
+          PublicKeyToken=null
     - attribute: 4
       operation: 2
       value: -10
-      callEvent: 0
+      callEvent:
+        m_PersistentCalls:
+          m_Calls: []
+        m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
+          PublicKeyToken=null
   helpText: "A d\xEDvida t\xE9cnica representa os aspectos do desenvolvimento que,
     conscientemente ou n\xE3o, foram implementados da melhor maneira. Eventualmente
     eles devem ser refatorados para garantir maior qualidade e organiza\xE7\xE3o do

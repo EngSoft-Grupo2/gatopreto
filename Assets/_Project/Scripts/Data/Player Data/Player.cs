@@ -12,7 +12,7 @@ namespace ProjetoGatoPreto
         public static float lowAttributePercentage = 0.1f;
         public static float highAttributePercentage = 0.8f;
         public static float initValues = 50f;
-        public float[] attributeValues = new float[Enum.GetValues(typeof(PlayerAttribute)).Length];
+        internal float[] attributeValues = new float[Enum.GetValues(typeof(PlayerAttribute)).Length];
 
         public float this [PlayerAttribute i]
         {
@@ -20,14 +20,25 @@ namespace ProjetoGatoPreto
             set { attributeValues[(int) i] = value; }
         }
 
+        void OnLevelWasLoaded(int level)
+        { 
+            ResetValues();
+        }
+
+        void ResetValues()
+        {
+            for (int i = 0; i < attributeValues.Length; i++)
+                attributeValues[i] = initValues;
+
+        }
+
         /// <summary>
         /// Start is called on the frame when a script is enabled just before
         /// any of the Update methods is called the first time.
         /// </summary>
-        void Start()
+        void Awake()
         {
-            for (int i = 0; i < attributeValues.Length; i++)
-                attributeValues[i] = initValues;
+            ResetValues();
         }
 
         public void ApplyDecisionEffects(CardDecision decision)
@@ -40,20 +51,24 @@ namespace ProjetoGatoPreto
 
         public void ApplyEffect(CardEffect effect)
         {
+            float oldValue = this[effect.attribute];
             switch (effect.operation)
             {
                 case EffectOperation.ADD:
-                    attributeValues[(int) effect.attribute] += effect.value;
+                    this[effect.attribute] += effect.value;
                     break;
                 case EffectOperation.MULTIPLY:
-                    attributeValues[(int) effect.attribute] *= effect.value;
+                    this[effect.attribute] *= effect.value;
                     break;
                 case EffectOperation.SET:
-                    attributeValues[(int) effect.attribute] = effect.value;
+                    this[effect.attribute] = effect.value;
                     break;
             }
             if (effect.callEvent != null)
                 effect.callEvent.Invoke();
+            ReferencesManager.instance.attributes[(int) effect.attribute]
+                .GetComponent<Attribute>()
+                .OnValueChange(oldValue, this[effect.attribute]);
         }
     }
 }

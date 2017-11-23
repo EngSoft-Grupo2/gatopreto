@@ -13,7 +13,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cardName: Corrida Vazia (XP)
   cardCategory: 1
-  cardTexture: {fileID: 0}
+  cardTexture: {fileID: 21300000, guid: b0aff998c0ffa6240aeeb5e98df848cc, type: 3}
   cardDescription: "A corrida acabou de ser fechada, mas nenhum membro iniciou suas
     tarefas. Voc\xEA viu uma poss\xEDvel mudan\xE7a que pode melhorar a corrida. O
     que fazer?"
@@ -23,30 +23,54 @@ MonoBehaviour:
     - attribute: 2
       operation: 2
       value: -20
-      callEvent: 0
+      callEvent:
+        m_PersistentCalls:
+          m_Calls: []
+        m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
+          PublicKeyToken=null
     - attribute: 3
       operation: 2
       value: 10
-      callEvent: 0
+      callEvent:
+        m_PersistentCalls:
+          m_Calls: []
+        m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
+          PublicKeyToken=null
     - attribute: 1
       operation: 2
       value: -40
-      callEvent: 0
+      callEvent:
+        m_PersistentCalls:
+          m_Calls: []
+        m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
+          PublicKeyToken=null
   rightDecision:
     decisionDescription: "Reabrir a corrida e modific\xE1-la."
     decisionEffects:
     - attribute: 2
       operation: 2
       value: 10
-      callEvent: 0
+      callEvent:
+        m_PersistentCalls:
+          m_Calls: []
+        m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
+          PublicKeyToken=null
     - attribute: 3
       operation: 2
       value: -40
-      callEvent: 0
+      callEvent:
+        m_PersistentCalls:
+          m_Calls: []
+        m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
+          PublicKeyToken=null
     - attribute: 1
       operation: 2
       value: -20
-      callEvent: 0
+      callEvent:
+        m_PersistentCalls:
+          m_Calls: []
+        m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
+          PublicKeyToken=null
   helpText: "No XP, caso os objetivos da corrida n\xE3o tenham sido alcan\xE7ados
     com sucesso, a mesma deveria ser modificada tentando adequ\xE1-la para objetivos
     condizentes."

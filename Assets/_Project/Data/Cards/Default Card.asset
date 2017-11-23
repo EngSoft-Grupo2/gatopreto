@@ -13,7 +13,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cardName: 
   cardCategory: 0
-  cardTexture: {fileID: 0}
+  cardTexture: {fileID: 21300000, guid: 04992b482c4d166479c28b31c5fd98d6, type: 3}
   cardDescription: 
   leftDecision:
     decisionDescription: 

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cardName: Representante (XP)
   cardCategory: 1
-  cardTexture: {fileID: 0}
+  cardTexture: {fileID: 21300000, guid: b3b2d19b9e0a1524487dbf70ae8769a6, type: 3}
   cardDescription: "\xC9 necess\xE1rio designar um representante do cliente para acompanhar
     o projeto?"
   leftDecision:
@@ -23,11 +23,19 @@ MonoBehaviour:
     - attribute: 4
       operation: 2
       value: -20
-      callEvent: 0
+      callEvent:
+        m_PersistentCalls:
+          m_Calls: []
+        m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
+          PublicKeyToken=null
     - attribute: 2
       operation: 2
       value: 10
-      callEvent: 0
+      callEvent:
+        m_PersistentCalls:
+          m_Calls: []
+        m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
+          PublicKeyToken=null
   rightDecision:
     decisionDescription: Deve haver um representante do cliente sempre presente na
       equipe.
@@ -35,11 +43,19 @@ MonoBehaviour:
     - attribute: 4
       operation: 2
       value: 20
-      callEvent: 0
+      callEvent:
+        m_PersistentCalls:
+          m_Calls: []
+        m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
+          PublicKeyToken=null
     - attribute: 2
       operation: 2
       value: -10
-      callEvent: 0
+      callEvent:
+        m_PersistentCalls:
+          m_Calls: []
+        m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
+          PublicKeyToken=null
   helpText: "No XP, o representante do cliente \xE9 respons\xE1vel por garantir que
     o desenvolvimento est\xE1 seguindo de acordo com os anseios do cliente."
   bibliography: 

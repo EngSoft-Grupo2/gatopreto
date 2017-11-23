@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -33,7 +34,9 @@ namespace ProjetoGatoPreto
         public GameObject modalRestartButton;
         public GameObject modalContinueButton;
         public GameObject cardCounterText;
+        public GameObject[] attributes = new GameObject[Enum.GetValues(typeof(PlayerAttribute)).Length];
         public Deck deck;
+        public AudioClip buttonClick;
 
         private void Awake()
         {

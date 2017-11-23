@@ -56,7 +56,7 @@ namespace ProjetoGatoPreto
         }
         public void Flip(bool fadeDecision = true)
         {
-            if (isFlipping || !cardDrag.canChange || !canFlip)
+            if (isFlipping)
                 return;
             if (fadeDecision)
             {

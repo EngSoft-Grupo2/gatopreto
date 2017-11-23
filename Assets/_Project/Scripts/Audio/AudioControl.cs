@@ -2,11 +2,17 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AudioControl
+namespace ProjetoGatoPreto
 {
-	public static void PlayAudioFromSource(AudioClip clip, AudioSource source)
+	public class AudioControl
 	{
-		source.clip = clip;
-		source.Play();
+		public static void PlayAudioFromSource(AudioClip clip)
+		{
+			if (!GameManager.instance.settings.audio)
+				return;
+			AudioSource source = GameManager.instance.audioSource;
+			source.clip = clip;
+			source.Play();
+		}
 	}
 }

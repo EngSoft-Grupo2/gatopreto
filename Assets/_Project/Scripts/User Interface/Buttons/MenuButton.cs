@@ -10,18 +10,11 @@ namespace ProjetoGatoPreto
 {
     public class MenuButton : MonoBehaviour
     {
-        public AudioSource audioSource;
-
-        private void Awake()
-        {
-            if (audioSource == null)
-                audioSource = GetComponent<AudioSource>();
-        }
+        public AudioClip audioClip;
 
         public virtual void Action()
         {
-            if (audioSource && GameManager.instance.settings.audio)
-                audioSource.Play();
+            AudioControl.PlayAudioFromSource(audioClip);
         }
     }
 }

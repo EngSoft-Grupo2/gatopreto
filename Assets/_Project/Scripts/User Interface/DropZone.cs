@@ -9,6 +9,7 @@ namespace ProjetoGatoPreto
     public class DropZone : MonoBehaviour, IDropHandler, IPointerEnterHandler, IPointerExitHandler
     {
         public float fadeTime = 0.25f;
+        public AudioClip audioClip;
         public CardDecision Decision
         {
             set
@@ -37,6 +38,7 @@ namespace ProjetoGatoPreto
             isActive = true;
             if (GameManager.instance.settings.vibration)
                 Handheld.Vibrate();
+            AudioControl.PlayAudioFromSource(audioClip);
             StartCoroutine(this.AnimateCanvasGroupAlpha(decisionDisplay, 0.0f, 1.0f, fadeTime));
         }
 
