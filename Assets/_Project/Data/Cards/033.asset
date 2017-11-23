@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b227798de7dbc994bbc305ac5668eee3, type: 3}
+  m_Name: 033
+  m_EditorClassIdentifier: 
+  cardName: "Mudan\xE7as Prejudicam Usabilidade"
+  cardCategory: 0
+  cardTexture: {fileID: 0}
+  cardDescription: "O cliente exigiu mudan\xE7as na interface que prejudicam a sua
+    usabilidade."
+  leftDecision:
+    decisionDescription: Vou tentar negociar com ele.
+    decisionEffects:
+    - attribute: 4
+      operation: 2
+      value: -40
+      callEvent: 0
+  rightDecision:
+    decisionDescription: Vamos acatar.
+    decisionEffects:
+    - attribute: 3
+      operation: 2
+      value: -10
+      callEvent: 0
+    - attribute: 4
+      operation: 2
+      value: 10
+      callEvent: 0
+  helpText: 
+  bibliography: 

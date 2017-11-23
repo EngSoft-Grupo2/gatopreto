@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b227798de7dbc994bbc305ac5668eee3, type: 3}
+  m_Name: 025
+  m_EditorClassIdentifier: 
+  cardName: Algo Funcionando
+  cardCategory: 0
+  cardTexture: {fileID: 0}
+  cardDescription: "O cliente quer ver algo funcionando, o que voc\xEA sugere?"
+  leftDecision:
+    decisionDescription: Vamos apresentar os resultados dos testes.
+    decisionEffects:
+    - attribute: 2
+      operation: 2
+      value: 20
+      callEvent: 0
+    - attribute: 4
+      operation: 2
+      value: -10
+      callEvent: 0
+  rightDecision:
+    decisionDescription: "Um prot\xF3tipo."
+    decisionEffects:
+    - attribute: 2
+      operation: 2
+      value: -10
+      callEvent: 0
+    - attribute: 4
+      operation: 2
+      value: 20
+      callEvent: 0
+  helpText: 
+  bibliography: 

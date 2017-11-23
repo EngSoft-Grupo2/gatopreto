@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b227798de7dbc994bbc305ac5668eee3, type: 3}
+  m_Name: 015
+  m_EditorClassIdentifier: 
+  cardName: "Licen\xE7a"
+  cardCategory: 0
+  cardTexture: {fileID: 0}
+  cardDescription: "Um dos nossos colegas est\xE1 de licen\xE7a, como vamos fazer
+    para atingir a meta?"
+  leftDecision:
+    decisionDescription: Pedir mais tempo ao cliente.
+    decisionEffects:
+    - attribute: 2
+      operation: 2
+      value: 20
+      callEvent: 0
+    - attribute: 4
+      operation: 2
+      value: -20
+      callEvent: 0
+  rightDecision:
+    decisionDescription: Fazer hora Extra.
+    decisionEffects:
+    - attribute: 2
+      operation: 2
+      value: -20
+      callEvent: 0
+    - attribute: 3
+      operation: 2
+      value: -10
+      callEvent: 0
+    - attribute: 4
+      operation: 2
+      value: 20
+      callEvent: 0
+  helpText: 
+  bibliography: 

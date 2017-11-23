@@ -1,0 +1,51 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b227798de7dbc994bbc305ac5668eee3, type: 3}
+  m_Name: 030
+  m_EditorClassIdentifier: 
+  cardName: Software Pesado
+  cardCategory: 0
+  cardTexture: {fileID: 0}
+  cardDescription: "O software est\xE1 muito pesado, torne-o mais optimizado."
+  leftDecision:
+    decisionDescription: "Vamos cortar funcionalidades n\xE3o obrigat\xF3rias."
+    decisionEffects:
+    - attribute: 3
+      operation: 2
+      value: -20
+      callEvent: 0
+    - attribute: 4
+      operation: 2
+      value: -40
+      callEvent: 0
+  rightDecision:
+    decisionDescription: "Vamos refatorar m\xF3dulos cr\xEDticos."
+    decisionEffects:
+    - attribute: 2
+      operation: 2
+      value: -20
+      callEvent: 0
+    - attribute: 3
+      operation: 2
+      value: 20
+      callEvent: 0
+    - attribute: 4
+      operation: 2
+      value: 20
+      callEvent: 0
+  helpText: "Refatora\xE7\xE3o: Retrabalhar o design do c\xF3digo at\xE9 que fique
+    na sua forma mais simples, mesmo que isso implique em \"mexer\" em um c\xF3digo
+    que esteja em funcionamento. Claro que a pr\xE1tica de refatora\xE7\xE3o nem sempre
+    \xE9 aceita, pois envolve quest\xF5es como prazo e custo. Al\xE9m disso, e essa
+    pr\xE1tica em si pode ser minimizada caso o projeto esteja usando 100% de orienta\xE7\xE3o
+    a objeto, onde podemos criar c\xF3digos os mais gen\xE9ricos e reutiliz\xE1veis
+    poss\xEDveis, diminuindo o trabalho em caso de uma poss\xEDvel refatora\xE7\xE3o."
+  bibliography: https://www.devmedia.com.br/extreme-programming-conceitos-e-praticas/1498
